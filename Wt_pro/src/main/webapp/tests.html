@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body
+  {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #070c13, #152a36, #104a59, #006c75, #0e9089);
+    background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+  }
+button {
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  color:white;
+}
+
+#tests {
+ margin-left: 25%;
+  display: none;
+  margin-top: 70px;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  border-radius: 15px;
+    background: rgba( 255, 255, 255, 0.15 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2.5px );
+-webkit-backdrop-filter: blur( 2.5px );
+border-radius: 10px;
+
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+-webkit-box-shadow:0px 0px 31px 0px #f4f2e7 ;
+-moz-box-shadow:0px 0px 31px 0px #f4f2e7 ;
+box-shadow:0px 0px 31px 0px #f4f2e7 ;
+-webkit-animation:bounce-in 2s ease-in 0s 1 normal;
+-moz-animation:bounce-in 2s ease-in 0s 1 normal;
+-ms-animation:bounce-in 2s ease-in 0s 1 normal;
+animation:bounce-in 2s ease-in 0s 1 normal;
+}
+@-webkit-keyframes bounce-in {
+0%{ opacity: 0; -webkit-transform: scale(.3); transform: scale(.3); }
+50%{ opacity: 1; -webkit-transform: scale(1.0); transform: scale(1.0); }
+70%{ -webkit-transform: scale(0.9); transform: scale(0.9); }
+100%{ -webkit-transform: scale(1); transform: scale(1); }
+}
+
+@keyframes bounce-in {
+0%{ opacity: 0; transform: scale(.3); }
+50%{ opacity: 1; transform: scale(1.0); }
+70%{ transform: scale(0.9); }
+100%{ transform: scale(1); }
+}
+p{
+    font-size: 20px;
+    color: white;
+}
+h1{
+  color: antiquewhite;
+  font-family: Bahnschrift SemiBold;
+}
+.btn{
+
+font-size: 30px;
+font-weight: 100;
+margin-top: 10px;
+cursor: pointer;
+width: 40px;
+height: 40px;
+}
+
+
+button {
+--c:  #227591; /* the color*/
+
+box-shadow: 0 0 0 .1em inset var(--c); 
+--_g: linear-gradient(var(--c) 0 0) no-repeat;
+background: 
+  var(--_g) calc(var(--_p,0%) - 100%) 0%,
+  var(--_g) calc(200% - var(--_p,0%)) 0%,
+  var(--_g) calc(var(--_p,0%) - 100%) 100%,
+  var(--_g) calc(200% - var(--_p,0%)) 100%;
+background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+outline-offset: .1em;
+transition: background-size .4s, background-position 0s .4s;
+}
+button:hover {
+--_p: 100%;
+transition: background-position .4s, background-size 0s;
+}
+button:active {
+box-shadow: 0 0 9e9q inset #0009; 
+background-color: var(--c);
+color: #fff;
+}
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+
+button {
+font-family: system-ui, sans-serif;
+font-size: 2.5rem;
+cursor: pointer;
+padding: .1em .6em;
+font-weight: bold;  
+border: none;
+}
+
+</style>
+<body>
+    <div style="text-align: center;" id="buttons">
+        <button class="neon" id="A" onclick="showTests('A')">A</button>
+        <button class="neon" id="B" onclick="showTests('B')">B</button>
+        <button class="neon" id="C" onclick="showTests('C')">C</button>
+        <button  class="neon" id="D" onclick="showTests('D')">D</button>
+        <button class="neon" id="E" onclick="showTests('E')">E</button>
+        <button class="neon" id="F" onclick="showTests('F')">F</button>
+        <button class="neon" id="G" onclick="showTests('G')">G</button>
+        <button class="neon" id="H" onclick="showTests('H')">H</button>
+        <button class="neon" id="I" onclick="showTests('I')">I</button>
+        <button class="neon" id="J" onclick="showTests('J')">J</button>
+        <button class="neon" id="K" onclick="showTests('K')">K</button>
+        <button class="neon" id="L" onclick="showTests('L')">L</button>
+        <button class="neon" id="M" onclick="showTests('M')">M</button>
+        <button class="neon" id="N" onclick="showTests('N')">N</button>
+        <button class="neon" id="O" onclick="showTests('O')">O</button>
+        <button class="neon" id="P" onclick="showTests('P')">P</button>
+        <button class="neon" id="Q" onclick="showTests('Q')">Q</button>
+        <button class="neon" id="R" onclick="showTests('R')">R</button>
+        <button class="neon" id="S" onclick="showTests('S')">S</button>
+        <button class="neon" id="T" onclick="showTests('T')">T</button>
+        <button class="neon" id="U" onclick="showTests('U')">U</button>
+        <button class="neon" id="V" onclick="showTests('V')">V</button>
+        <button class="neon" id="W" onclick="showTests('W')">W</button>
+        <button class="neon" id="X" onclick="showTests('X')">X</button>
+        <button class="neon" id="Y" onclick="showTests('Y')">Y</button>
+        <button class="neon" id="Z" onclick="showTests('Z')">Z</button>
+        
+        
+      </div>
+      
+      <div id="tests">
+       
+      </div>
+      <script>
+        //Arrays
+  const tests = [
+  { name: "Amylase Test", description: "measures the levels of amylase in the blood. It is used to diagnose and monitor pancreatitis and other pancreatic diseases.", disease: "It is used to diagnose and monitor pancreatitis and other pancreatic diseases." ,procedure:"The test involves taking a blood sample from a vein in the arm."
+}, 
+  { name: "Blood Glucose Test", description: "A test that measures the amount of glucose in the blood", disease: "Diabetes", procedure:"The test is taken by a diabetic kit" },
+  { name: "Complete Blood Count", description: "A test that measures different components of the blood, including red blood cells, white blood cells, and platelets", disease: "Various",procedure:"The blood sample is taken from the body and tested" },
+  { name: "Lipid Profile", description: "A test that measures the levels of various fats and cholesterol in the blood", disease: "Heart disease" ,procedure:"The test involves taking a blood sample from a vein in the arm."},
+  { name: "D-dimer Test", description: " Measures the amount of a substance called D-dimer in the blood.", disease: "It is used to diagnose and monitor blood clots" ,procedure:"The test involves taking a blood sample from a vein in the arm."},
+  { name: "Electrolyte Panel", description: "Measures the levels of electrolytes, such as sodium and potassium, in the blood.", disease: "It is used to evaluate fluid balance and kidney function." ,procedure:"The test involves taking a blood sample from a vein in the arm."},
+  { name: "Ferritin Test", description: "Measures the level of ferritin in the blood.", disease: " It is used to diagnose iron-deficiency anemia." ,procedure:"The test involves taking a blood sample from a vein in the arm."},
+  { name: "Glomerular Filtration Rate (GFR) Test", description: "Estimates how well the kidneys are functioning by measuring how much blood passes through the glomeruli per  minute ", disease: "It is used to evaluate kidney function." ,procedure:"The test involves taking a blood sample from a vein in the arm and measuring creatinine levels."},
+  { name: "Human Chorionic Gonadotropin (hCG) Test", description: "Measures the levels of hCG in the blood or urine. ", disease: "It is used to diagnose pregnancy and some types of cancer." ,procedure:"The test involves taking a blood sample from a vein in the arm or a urine sample."},
+  { name: "Insulin Test", description: "Measures the level of insulin in the blood. ", disease: " It is used to diagnose and monitor diabetes. " ,procedure:"The test involves taking a blood sample from a vein in the arm."},
+  { name: "Magnesium Test", description: "Measures the level of magnesium in the blood.", disease: "It is used to diagnose and monitor magnesium deficiency and excess." ,procedure:"The test involves taking a blood sample from a vein in the arm."},
+  { name: "Natriuretic Peptide Tests", description: " Measure the levels of natriuretic peptides, such as BNP and NT-proBNP, in the blood.", disease: "They are used to diagnose and monitor heart failure." ,procedure:"The test involves taking a blood sample from a vein in the arm."},
+  { name: "Osmolality Test", description: "Measures the concentration of particles, such as electrolytes and glucose, in the blood or urine. ", disease: "It is used to evaluate fluid balance and diagnose some medical conditions." ,procedure:"The test involves taking a sample from blood or urine."},
+  { name: "Prostate-Specific Antigen (PSA) Test", description: "Measures the level of PSA in the blood.", disease: "It is used to screen for and monitor prostate cancer." ,procedure:"The test involves taking a blood sample from a vein in the arm."},
+  { name: "Rheumatoid Factor (RF) Test", description: "Measures the level of RF in the blood. .", disease: "It is used to diagnose rheumatoid arthritis and other autoimmune disorders" ,procedure:"The test involves taking a blood sample from a vein in the arm."},
+  { name: "Syphilis Test", description: "Detects antibodies to the bacteria that cause syphilis in the blood.", disease: " It is used to diagnose syphilis and monitor treatment. " ,procedure:"The test involves taking a blood sample from a vein in the arm."},
+  { name: "TSH test", description: "This test measures the level of thyroid-stimulating hormone (TSH) in the blood, which is produced by the pituitary gland and stimulates the thyroid gland to produce hormones that regulate metabolism.", disease: "It is used to diagnose and monitor thyroid disorders such as hypothyroidism and hyperthyroidism." ,procedure:"The test involves taking a blood sample from a vein in the arm."},
+  { name: "Urinalysis", description: "This test is used to analyze a urine sample for the presence of various substances, such as proteins, glucose, and blood cells", disease: "It  indicates a range of conditions such as urinary tract infections, kidney disease, and diabetes." ,procedure:"The procedure involves collecting a urine sample and analyzing it in a laboratory."},
+  { name: "Vitamin D test", description: " This test measures the level of vitamin D in the blood, which is important for bone health, immune function, and overall health. ", disease: "It is used to diagnose and monitor conditions such as osteoporosis, rickets, and vitamin D deficiency." ,procedure:"The test involves taking a blood sample from a vein in the arm."},
+  { name: "Widal test", description: "This test is used to diagnose the bacterial infection typhoid fever, which is caused by the bacterium Salmonella typhi.", disease: "It measures the presence of antibodies in the blood that are produced in response to the infection.", procedure:"The test involves taking a blood sample from a vein in the arm." },
+  { name: "X-ray", description: " This test uses radiation to produce images of the inside of the body.", disease: "It can be used to diagnose and monitor a range of conditions such as broken bones, pneumonia, and cancer. ", procedure:"The procedure involves positioning the body part being examined between a machine that produces the radiation and a plate that captures the image" },
+  { name: "Yersinia test", description: "This test is used to diagnose the bacterial infection yersiniosis, which is caused by the bacterium Yersinia enterocolitica.", disease: " It measures the presence of antibodies in the blood that are produced in response to the infection.", procedure:"The test involves taking a blood sample from a vein in the arm." },
+  { name: "Zinc test", description: "This test measures the level of zinc in the blood, which is important for immune function, wound healing, and growth and development.", disease: "It is used to diagnose and monitor conditions such as zinc deficiency and Wilson's disease.", procedure:"The test involves taking a blood sample from a vein in the arm." }
+  // add more tests as needed
+];
+//function
+function showTests(letter) {
+  const testsDiv = document.getElementById("tests");
+  testsDiv.innerHTML = ""; // clear any previous tests
+  
+  const filteredTests = tests.filter(test => test.name.startsWith(letter));
+  //control statements
+  if (filteredTests.length === 0) {
+    testsDiv.innerHTML = "<p>No tests available for this letter</p>";
+  } else {
+    filteredTests.forEach(test => {
+      const testDiv = document.createElement("div");
+      testDiv.innerHTML = `
+        <h1>${test.name}</h1>
+        <p><strong>Description:</strong> ${test.description}</p>
+        <p><strong>Disease:</strong> ${test.disease}</p>
+        <p><strong>Procedure:</strong> ${test.procedure}</p>
+      `;
+      testsDiv.appendChild(testDiv);
+    });
+  }
+  
+  // show the tests div
+  testsDiv.style.display = "block";
+}
+//object
+let person = {
+  firstName : "Suva",
+  lastName  : "Lakshmi",
+  
+};
+console.log(person.firstName+" "+person.lastName);
+
+      </script>
+</body>
+</html>
+

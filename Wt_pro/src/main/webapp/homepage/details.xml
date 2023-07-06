@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CATALOG>
+
+    <CD>
+        <TITLE>Available</TITLE>
+        <NAME>Diabetic Test</NAME>
+        <PRICE>150</PRICE>
+       <USAGE>Used to monitor blood sugar levels. This test is essential for some people with diabetes. If glucose gets too high or too low, it can cause dangerous complications</USAGE>
+    </CD>
+
+        <TITLE>Available</TITLE>
+        <NAME>Fecal Occult Blood Test</NAME>
+        <PRICE>250</PRICE>
+        <USAGE>Used to check stool for signs of colon cancer. Your provider will give you a test kit.</USAGE>
+        
+    <CD>
+       <TITLE>Available</TITLE>
+        <NAME>Hepatitis C Test</NAME>
+        <PRICE>450</PRICE>
+        <USAGE>Used to find out if you have hepatitis C now or were infected in the past.</USAGE>
+       
+    </CD>
+
+    <CD>
+      <TITLE>Available</TITLE>
+        <NAME>Genetic Test</NAME>
+        <PRICE>180</PRICE>
+        <USAGE>Used to find out if you may be at higher risk of cancer or other diseases by looking for certain genetic changes. Genetic tests may also be used to find out information about your ancestors. These tests work by comparing your genetic data with genetic data from large groups of people.</USAGE>
+      
+    </CD>
+
+    <CD>
+      <TITLE>Available</TITLE>
+        <NAME>COVID-19 Test</NAME>
+        <PRICE>190</PRICE>
+        <USAGE>You may be able to use an at-home test for COVID-19</USAGE>
+        
+    </CD>
+
+    <CD>
+     <TITLE>Not Available</TITLE>
+        <NAME>Biopsies </NAME>
+        <PRICE>650</PRICE>
+        <USAGE>This helps to diagnose disease.</USAGE>
+        
+    </CD>
+
+
+    <CD>
+       <TITLE>Not Available</TITLE>
+        <NAME>CT scan</NAME>
+        <PRICE>150</PRICE>
+        <USAGE>To diagnose and monitor many different conditions such as tumours or infections to look for injuries after a serious accident to help plan treatment such as surgery or radiotherapy</USAGE>
+       
+    </CD>
+
+    <CD>
+        <TITLE>Not Available</TITLE>
+        <NAME>Gastroscopy</NAME>
+        <PRICE>150</PRICE>
+        <USAGE>astroscopy is usually done to investigate symptoms such as indigestion, nausea, or difficulty swallowing. It can show if there is inflammation, an ulcer or a polyp or other growth.</USAGE>
+     
+    </CD>
+
+    
+    
+    <CD>
+        <TITLE>Available</TITLE>
+        <NAME> Hearing test</NAME>
+        <PRICE>150</PRICE>
+        <USAGE>If you have hearing loss, or think your hearing may be damaged, a hearing test can check this.</USAGE>
+      
+    </CD>
+    
+
+    <CD>
+      <TITLE>Not Available</TITLE>
+        <NAME>MRI scan</NAME>
+        <PRICE>150</PRICE>
+        <USAGE>MRI is generally used for investigation, diagnosis and planning of treatment of: tumours ,joint injury or disease,soft tissue injury,internal organ damage</USAGE>
+        
+    </CD>
+    <CD>
+        <TITLE>Available</TITLE>
+        <NAME>Diabetic Test</NAME>
+        <PRICE>150</PRICE>
+       <USAGE>Used to monitor blood sugar levels. This test is essential for some people with diabetes. If glucose gets too high or too low, it can cause dangerous complications</USAGE>
+    </CD>
+
+        <TITLE>Available</TITLE>
+        <NAME>Fecal Occult Blood Test</NAME>
+        <PRICE>250</PRICE>
+        <USAGE>Used to check stool for signs of colon cancer. Your provider will give you a test kit.</USAGE>
+        
+    <CD>
+       <TITLE>Available</TITLE>
+        <NAME>Hepatitis C Test</NAME>
+        <PRICE>150</PRICE>
+        <USAGE>Used to find out if you have hepatitis C now or were infected in the past.</USAGE>
+       
+    </CD>
+
+    <CD>
+      <TITLE>Available</TITLE>
+        <NAME>Genetic Test</NAME>
+        <PRICE>150</PRICE>
+        <USAGE>Used to find out if you may be at higher risk of cancer or other diseases by looking for certain genetic changes. Genetic tests may also be used to find out information about your ancestors. These tests work by comparing your genetic data with genetic data from large groups of people.</USAGE>
+      
+    </CD>
+    </CATALOG>

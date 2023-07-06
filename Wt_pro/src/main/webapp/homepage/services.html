@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+  body{
+    height: 100%;
+    background-image: linear-gradient(to bottom, #070c13, #152a36, #104a59, #006c75, #0e9089);
+    background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+  }
+  
+.glow-on-hover {
+    width: 330px;
+    margin-top:3%;
+    
+    height: 60px;
+    font-size:20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.mb-5
+{
+  color:#0dcaf0;
+}
+.service-item {
+  display: block;
+  position: relative;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 6px 12px rgba(0,0,0,0.23);
+}
+
+.service-icon {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 70px;
+  height: 70px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.service-item h5 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.service-item h6 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.service-item p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.service-item .text-muted {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.fa-dollar-sign {
+  margin-right: 5px;
+}
+</style>
+<body>
+
+  <div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h2 class="section-title text-center text-primary text-uppercase">TABLETS</h2>
+            <br>
+            <h3 class="mb-5">DETAILS ABOUT THE DISEASE <span class="text-primary text-uppercase">AND TABLETS</span></h3>
+            <button onclick="loadDoc()" class="glow-on-hover"   id="loadbtn">DETAILS</button>
+            <br>
+        </div>
+
+        <div class="row g-4" id="target">
+
+        </div>
+    </div>
+</div>
+
+<script>
+  function loadDoc() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+      }
+    };
+    xhttp.open("GET", "data.xml", true);
+    xhttp.send();
+  }
+  function myFunction(xml) {
+    var i;
+    var xmlDoc = xml.responseXML;
+    var content = "";
+    var x = xmlDoc.getElementsByTagName("VARIETY");
+    for (i = 0; i <x.length; i++) { 
+      content +=  ' <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.' + (i+1) + 's"> ' +
+                 '    <a class="service-item rounded" href=""> ' +
+                          '<div class="service-icon bg-transparent border rounded p-1">' +
+                              '<div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">' +
+                                  
+                              '</div>' +
+                          '</div>' +
+                          '<h6 class="mb-3">Tablet: Name ' + x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue + '</h6>' +
+                          '<h5 class="mb-3">' + x[i].getElementsByTagName("DISEASE")[0].childNodes[0].nodeValue + '</h5>' +
+                          x[i].getElementsByTagName("DOSAGE")[0].childNodes[0].nodeValue + '</h6>' +
+
+                          '<p class="text-body mb-0">' + x[i].getElementsByTagName("DESC")[0].childNodes[0].nodeValue + '</p>' +
+                      '</a>' +
+                  '</div>';
+    }
+    document.getElementById("target").innerHTML = content;
+    document.getElementById("loadbtn").style.display = "none";
+  }
+</script>
+
+
+</body>
+</html>

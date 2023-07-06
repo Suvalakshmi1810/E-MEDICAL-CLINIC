@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE students [
+  <!ELEMENT students (student+)>
+  <!ELEMENT student (name, register_number, mark)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT register_number (#PCDATA)>
+  <!ELEMENT mark (#PCDATA)>
+]>
+<students>
+  <student>
+    <name>John Doe</name>
+    <register_number>101</register_number>
+    <mark>85</mark>
+  </student>
+  <student>
+    <name>Jane Smith</name>
+    <register_number>102</register_number>
+    <mark>92</mark>
+  </student>
+  <student>
+    <name>Bob Johnson</name>
+    <register_number>103</register_number>
+    <mark>78</mark>
+  </student>
+</students>
+
+

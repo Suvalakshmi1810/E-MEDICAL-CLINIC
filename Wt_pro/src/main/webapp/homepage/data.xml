@@ -1,0 +1,98 @@
+<VARIETIES>
+    <VARIETY>
+        <DISEASE>Hypertension</DISEASE>
+        <NAME>Lisinopril</NAME>
+        <DOSAGE>10mg once daily</DOSAGE>
+       
+       
+        <DESC>To control blood pressure</DESC>
+    </VARIETY>
+    <VARIETY>
+        <DISEASE>Malaria</DISEASE>
+        <NAME>Quinine</NAME>
+        <DOSAGE>300mg every 8 hours</DOSAGE>
+        
+        
+        <DESC>To treat malaria</DESC>
+    </VARIETY>    
+    <VARIETY>
+        <DISEASE>Diabetes mellitus</DISEASE>
+        <NAME>Metformin</NAME>
+        <DOSAGE>500mg twice daily</DOSAGE>
+        
+       
+        <DESC>To control blood sugar levels</DESC>
+    </VARIETY>
+    <VARIETY>
+        <DISEASE>Heart disease</DISEASE>
+        <NAME>Aspirin</NAME>
+        <DOSAGE>81mg once daily</DOSAGE>
+      
+        
+        <DESC> To prevent blood clots</DESC>
+    </VARIETY> 
+    <VARIETY>
+        <DISEASE>Insomnia</DISEASE>
+        <NAME>Zolpidem </NAME>
+        <DOSAGE>5-10mg before bedtime</DOSAGE>
+        
+        
+        <DESC>To treat sleep disorders</DESC>
+    </VARIETY>      
+    <VARIETY>
+        <DISEASE>Acid reflux</DISEASE>
+        <NAME>Omeprazole</NAME>
+        <DOSAGE>20mg once daily </DOSAGE>
+        
+        
+        <DESC>To reduce stomach acid</DESC>
+    </VARIETY>    
+      <VARIETY>
+        <DISEASE>Malaria</DISEASE>
+        <NAME>Quinine</NAME>
+        <DOSAGE>300mg every 8 hours</DOSAGE>
+        
+        
+        <DESC>To treat malaria</DESC>
+    </VARIETY>    
+    <VARIETY>
+        <DISEASE>Diabetes mellitus</DISEASE>
+        <NAME>Metformin</NAME>
+        <DOSAGE>500mg twice daily</DOSAGE>
+        
+       
+        <DESC>To control blood sugar levels</DESC>
+    </VARIETY>
+    <VARIETY>
+        <DISEASE>Heart disease</DISEASE>
+        <NAME>Aspirin</NAME>
+        <DOSAGE>81mg once daily</DOSAGE>
+      
+        
+        <DESC> To prevent blood clots</DESC>
+          <VARIETY>
+        <DISEASE>Diabetes mellitus</DISEASE>
+        <NAME>Metformin</NAME>
+        <DOSAGE>500mg twice daily</DOSAGE>
+        
+       
+        <DESC>To control blood sugar levels</DESC>
+    </VARIETY>
+    <VARIETY>
+        <DISEASE>Heart disease</DISEASE>
+        <NAME>Aspirin</NAME>
+        <DOSAGE>81mg once daily</DOSAGE>
+      
+        
+        <DESC> To prevent blood clots</DESC>
+    </VARIETY> 
+    <VARIETY>
+        <DISEASE>Insomnia</DISEASE>
+        <NAME>Zolpidem </NAME>
+        <DOSAGE>5-10mg before bedtime</DOSAGE>
+        
+        
+        <DESC>To treat sleep disorders</DESC>
+    </VARIETY>      
+    </VARIETY>    
+</VARIETIES>
